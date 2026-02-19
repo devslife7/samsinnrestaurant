@@ -1,0 +1,54 @@
+{
+  "name": "Sam's Inn Bar Restaurant",
+  "tagline": "Honoring the USMC since 1974 \"Semper Fi\"",
+  "logo": {
+    "description": "Bulldog wearing a green military beret",
+    "alt": "Sam's Inn Restaurant Logo"
+  },
+  "address": "223 Potomac Ave, Quantico, VA 22134",
+  "social": {
+    "facebook": true,
+    "instagram": true
+  },
+  "hours": [
+    {
+      "days": "Monday – Friday",
+      "open": "10:00 AM",
+      "close": "9:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "open": "11:00 AM",
+      "close": "8:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "open": "8:00 AM",
+      "close": "8:00 PM"
+    }
+  ],
+  "navigation": [
+    "Home",
+    "Menu",
+    "Our Place",
+    "Contact"
+  ],
+  "hero": {
+    "cta_button": "Menu",
+    "cta_link_text": "Check out our homemade lunch specials"
+  },
+  "features": [
+    {
+      "title": "Online Ordering",
+      "description": "Order food with QR code"
+    },
+    {
+      "title": "Catering Available",
+      "description": "For group meetings and parties, on and off-post"
+    },
+    {
+      "title": "Karaoke",
+      "description": "Karaoke available. Contact manager to reserve for your private party or event."
+    }
+  ]
+}

@@ -1,34 +1,58 @@
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function Hero() {
     return (
-        <section className="relative bg-black text-white py-20 lg:py-32 overflow-hidden">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-                <div className="w-full md:w-1/2 z-10 space-y-6">
-                    <h1 className="font-heading text-5xl md:text-7xl uppercase leading-tight tracking-tight">
-                        <span className="block text-white">Sam&apos;s Inn:</span>
-                        <span className="block text-[#E63946]">Bulldog Edition</span>
-                    </h1>
-                    <p className="text-xl md:text-2xl text-gray-300 font-sans font-light">
-                        Bold Flavors. Uncompromising Quality.
-                    </p>
-                    <Button className="bg-[#E63946] hover:bg-[#d62839] text-white font-heading tracking-wider text-xl px-8 py-6 rounded-sm shadow-lg mt-4">
-                        ORDER NOW
-                    </Button>
-                </div>
+        <section
+            id="home"
+            className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+            style={{
+                backgroundImage: "url('/hero-stone-wall.png')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+            }}
+        >
+            {/* Dark red overlay */}
+            <div className="absolute inset-0 bg-bg-dark/85" />
 
-                {/* Image Placeholder */}
-                <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px]">
-                    {/* <Image src="/steak-hero.jpg" alt="Steak on Grill" fill className="object-cover rounded-lg shadow-2xl" /> */}
-                    <div className="absolute inset-0 bg-zinc-800 rounded-lg flex items-center justify-center border border-zinc-700">
-                        <span className="text-zinc-500 font-heading text-2xl">Steak Image Placeholder</span>
-                    </div>
-                    {/* Smoke effect could be added with CSS or an image overlay */}
+
+
+            {/* Content */}
+            <div className="relative z-10 flex flex-col items-center text-center px-4 space-y-6 max-w-4xl">
+                {/* Location label */}
+                <p className="font-heading text-stone tracking-[0.3em] text-xs md:text-sm uppercase">
+                    QUANTICO, VA &bull; EST. 1974
+                </p>
+
+                {/* Main headline */}
+                <h1 className="font-heading text-off-white uppercase leading-none tracking-tight">
+                    <span className="block text-6xl md:text-9xl">SAM&apos;S INN</span>
+                    <span className="block text-4xl md:text-6xl text-cream mt-2">BAR &amp; RESTAURANT</span>
+                </h1>
+
+                {/* Tagline */}
+                <p className="text-off-white/80 text-base md:text-xl font-light max-w-lg">
+                    Honoring the USMC Since 1974 &mdash; Semper Fi
+                </p>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                    <a
+                        href="#menu"
+                        className="bg-brand-red hover:bg-red-dark text-off-white font-heading tracking-widest text-sm px-8 py-4 uppercase transition-colors"
+                    >
+                        SEE THE MENU
+                    </a>
+                    <a
+                        href="#bar"
+                        className="border-2 border-white/60 text-off-white hover:bg-white hover:text-zinc-900 font-heading tracking-widest text-sm px-8 py-4 uppercase transition-colors"
+                    >
+                        THE BAR
+                    </a>
                 </div>
             </div>
 
-            {/* Background patterns or gradients could be added here */}
-            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-zinc-900 to-transparent opacity-50 pointer-events-none" />
+            {/* Bottom red line */}
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-brand-red" />
         </section>
     );
 }

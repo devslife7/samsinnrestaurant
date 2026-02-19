@@ -1,0 +1,230 @@
+{
+  "menus": [
+    {
+      "category": "breakfast",
+      "title": "Sam's Holiday Breakfast Menu",
+      "items": [
+        {
+          "id": "b1",
+          "name": "Sam's Supreme Croissant",
+          "description": "Croissant sandwich with bacon, egg, and cheese",
+          "price": 10.50,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Sam's Supreme Croissant",
+          "imageUrl": "/menu/sams-supreme-croissant.png"
+        },
+        {
+          "id": "b2",
+          "name": "Breakfast Taco",
+          "description": "Flour tortilla filled with scrambled eggs and sausage",
+          "price": 11.50,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Breakfast Taco"
+        },
+        {
+          "id": "b3",
+          "name": "Sam's Big Breakfast Combo",
+          "description": "Biscuit with sausage patty and scrambled eggs",
+          "price": 13.99,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Sam's Big Breakfast Combo"
+        },
+        {
+          "id": "b4",
+          "name": "Sam's Classic Omelette",
+          "description": "Cheese and choice of ham, bacon, sausage, or veggie. $1.00 per extra meat.",
+          "price": 12.50,
+          "badge": null,
+          "note": "$1.00 per extra meat",
+          "imageAlt": "Sam's Classic Omelette"
+        },
+        {
+          "id": "b5",
+          "name": "Pancake or Waffle",
+          "description": "3 pancakes or 2 waffles",
+          "price": 12.50,
+          "badge": null,
+          "note": "3 pancakes or 2 waffles",
+          "imageAlt": "Pancakes and Waffles"
+        },
+        {
+          "id": "b6",
+          "name": "Quiche (Breakfast Type)",
+          "description": "Sausage, egg, and veggie quiche in a pie crust",
+          "price": 12.50,
+          "badge": null,
+          "note": "Sausage, egg & veggie",
+          "imageAlt": "Breakfast Quiche"
+        },
+        {
+          "id": "b7",
+          "name": "Hash Browns or Tater Tots",
+          "description": "Golden crispy hash brown patties or tater tots",
+          "price": 4.00,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Hash Browns or Tater Tots"
+        }
+      ]
+    },
+    {
+      "category": "todays_recommendations",
+      "title": "Today's Menu Recommendations",
+      "items": [
+        {
+          "id": "t1",
+          "name": "Bulgogi Beef with Rice",
+          "description": "Beef bulgogi over white rice in a dark bowl, topped with green onions and sesame seeds",
+          "price": 16.99,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Bulgogi Beef with Rice"
+        },
+        {
+          "id": "t2",
+          "name": "Spicy Pork with Rice",
+          "description": "Spicy pork stir-fry over rice, garnished with sesame seeds",
+          "price": 16.99,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Spicy Pork with Rice"
+        },
+        {
+          "id": "t3",
+          "name": "Sam's Burger with Bacon",
+          "description": "Burger with bacon, cheese, lettuce, and tomato on a bun",
+          "price": 13.99,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Sam's Burger with Bacon"
+        },
+        {
+          "id": "t4",
+          "name": "Chicken Wings",
+          "description": "Glazed chicken wings on a plate with dipping sauce and celery",
+          "price": 13.99,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Chicken Wings"
+        },
+        {
+          "id": "t5",
+          "name": "Spaghetti with Meat Sauce",
+          "description": "Spaghetti pasta with rich meat sauce and melted cheese",
+          "price": 16.99,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Spaghetti with Meat Sauce"
+        },
+        {
+          "id": "t6",
+          "name": "Homemade Lasagna",
+          "description": "Layered lasagna with tomato sauce and melted cheese, garnished with basil. Served with garlic bread or salad.",
+          "price": 16.99,
+          "badge": null,
+          "note": "With garlic bread or salad",
+          "imageAlt": "Homemade Lasagna"
+        },
+        {
+          "id": "t7",
+          "name": "Meatloaf with Mashed Potatoes",
+          "description": "Sliced meatloaf on a plate with mashed potatoes and green beans",
+          "price": 16.99,
+          "badge": null,
+          "note": null,
+          "imageAlt": "Meatloaf with Mashed Potatoes"
+        }
+      ]
+    },
+    {
+      "category": "all_day_special",
+      "title": "All Day Special",
+      "items": [
+        {
+          "id": "a1",
+          "name": "Korean BBQ Short Ribs (Galbi) with Rice and Kimchi",
+          "description": "Grilled short ribs over white rice with kimchi, topped with green onions and sesame seeds",
+          "price": 21.99,
+          "badge": "New Menu Arrival",
+          "note": null,
+          "imageAlt": "Korean BBQ Short Ribs with Rice and Kimchi"
+        },
+        {
+          "id": "a2",
+          "name": "Freshly Marinated Bulgogi Beef with Rice",
+          "description": "Bulgogi beef over white rice in a dark bowl, topped with green onions and sesame seeds",
+          "price": 15.99,
+          "badge": null,
+          "note": "Until 2:00 PM",
+          "imageAlt": "Bulgogi Beef with Rice"
+        },
+        {
+          "id": "a3",
+          "name": "Spicy Pork with Rice",
+          "description": "Spicy pork stir-fry over rice in a bowl",
+          "price": 14.99,
+          "badge": null,
+          "note": "Until 2:00 PM",
+          "imageAlt": "Spicy Pork with Rice"
+        },
+        {
+          "id": "a4",
+          "name": "Homemade Meatloaf with Mashed Potatoes",
+          "description": "Sliced meatloaf on a blue patterned plate with mashed potatoes and green beans",
+          "price": 15.99,
+          "badge": "New Menu Arrival",
+          "note": null,
+          "imageAlt": "Meatloaf with Mashed Potatoes"
+        },
+        {
+          "id": "a5",
+          "name": "Beef Taco For 4 — Hard or Soft Shell (Mix & Match)",
+          "description": "Hard shell and soft shell tacos filled with ground beef, lettuce, and shredded cheese",
+          "price": 12.99,
+          "badge": null,
+          "note": "Until 2:00 PM",
+          "imageAlt": "Beef Tacos Hard and Soft Shell"
+        },
+        {
+          "id": "a6",
+          "name": "Spaghetti with Fresh Meat Sauce & Italian Sausage",
+          "description": "Spaghetti with rich meat sauce, sliced Italian sausage, and melted cheese",
+          "price": 15.99,
+          "badge": null,
+          "note": "Until 2:00 PM",
+          "imageAlt": "Spaghetti with Meat Sauce and Italian Sausage"
+        },
+        {
+          "id": "a7",
+          "name": "Homemade Bowl of Chili w/Rice or Nachos, or Chili Dog (x2)",
+          "description": "Bowl of chili topped with shredded cheese and green onions; or two chili dogs with mustard and fries",
+          "price": 13.99,
+          "badge": "New Menu Arrival",
+          "note": null,
+          "imageAlt": "Bowl of Chili and Chili Dogs"
+        },
+        {
+          "id": "a8",
+          "name": "Homemade Pork Chops w/Mashed Potatoes & Vegetable",
+          "description": "Pork chops on a white plate with mashed potatoes, asparagus, and a side dipping sauce",
+          "price": 16.99,
+          "badge": "New Menu Arrival",
+          "note": null,
+          "imageAlt": "Pork Chops with Mashed Potatoes and Vegetables"
+        },
+        {
+          "id": "a9",
+          "name": "3 Homemade Sliders — Beef or Chicken",
+          "description": "Three homemade sliders on soft buns with lettuce, tomato, and cheese, served on a white plate",
+          "price": 13.99,
+          "badge": "New Menu Arrival",
+          "note": "Beef or chicken",
+          "imageAlt": "3 Homemade Sliders"
+        }
+      ]
+    }
+  ]
+}

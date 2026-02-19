@@ -1,50 +1,54 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import restaurantData from "@/data/restaurant.json";
+
+const HREF_MAP: Record<string, string> = {
+    "Home": "#home",
+    "Menu": "#menu",
+    "Our Place": "#our-place",
+    "Contact": "#contact",
+};
 
 export function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
+    const navLinks = restaurantData.navigation;
 
     return (
-        <nav className="border-b bg-background sticky top-0 z-50">
-            <div className="container mx-auto px-4 h-20 md:h-32 flex items-center justify-between relative">
-                {/* Mobile Menu Toggle - Left on Mobile */}
+        <nav className="bg-white border-b border-zinc-200 sticky top-0 z-50">
+            <div className="container mx-auto px-4 h-20 md:h-28 flex items-center justify-between relative">
+
+                {/* Mobile Menu Toggle */}
                 <div className="md:hidden z-10">
-                    <Button
-                        variant="ghost"
-                        size="sm"
-                        onClick={toggleMobileMenu}
-                        className="px-2"
+                    <button
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="p-2 text-zinc-800 hover:text-brand-red transition-colors"
                         aria-label="Toggle menu"
                     >
-                        {isMobileMenuOpen ? (
-                            <X className="h-6 w-6" />
-                        ) : (
-                            <Menu className="h-6 w-6" />
-                        )}
-                    </Button>
+                        {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                    </button>
                 </div>
 
-                {/* Desktop Navigation - Left */}
-                <div className="hidden md:flex items-center space-x-8 font-heading text-lg tracking-wide">
-                    <Link href="#" className="hover:text-primary transition-colors">Menu</Link>
-                    <Link href="#" className="hover:text-primary transition-colors">About Us</Link>
-                    <Link href="#" className="hover:text-primary transition-colors">Locations</Link>
-                    <Link href="#" className="hover:text-primary transition-colors">Contact</Link>
+                {/* Desktop Nav - Left */}
+                <div className="hidden md:flex items-center space-x-8 font-heading text-sm tracking-widest">
+                    {navLinks.map((label) => (
+                        <Link
+                            key={label}
+                            href={HREF_MAP[label] ?? "#"}
+                            className="text-zinc-800 hover:text-brand-red transition-colors uppercase"
+                        >
+                            {label}
+                        </Link>
+                    ))}
                 </div>
 
                 {/* Center Logo */}
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <div className="relative w-24 h-16 md:w-40 md:h-32 flex items-center justify-center">
-                        <Link href="/">
+                    <Link href="#home">
+                        <div className="relative w-16 h-14 md:w-24 md:h-20">
                             <Image
                                 src="/bulldog-logo.png"
                                 alt="Sam's Inn Bulldog"
@@ -52,49 +56,34 @@ export function Navbar() {
                                 className="object-contain"
                                 priority
                             />
-                        </Link>
-                    </div>
+                        </div>
+                    </Link>
                 </div>
 
-                {/* Right Action */}
-                <div className="flex items-center gap-4 z-10">
-                    <Button className="bg-[#E63946] hover:bg-[#d62839] text-white font-heading tracking-wider text-sm md:text-lg px-3 py-1 md:px-6 md:py-2 h-auto rounded-sm shadow-md">
+                {/* ORDER ONLINE Button */}
+                <div className="z-10">
+                    <a
+                        href="#menu"
+                        className="bg-brand-red hover:bg-red-dark text-off-white font-heading tracking-widest text-xs md:text-sm px-3 py-2 md:px-5 md:py-3 uppercase transition-colors"
+                    >
                         ORDER ONLINE
-                    </Button>
+                    </a>
                 </div>
             </div>
 
-            {/* Mobile Menu Overlay */}
+            {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-background border-b shadow-lg py-4 px-4 flex flex-col space-y-4">
-                    <Link
-                        href="#"
-                        className="hover:text-primary transition-colors font-heading text-lg block py-2 border-b border-border/50"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        Menu
-                    </Link>
-                    <Link
-                        href="#"
-                        className="hover:text-primary transition-colors font-heading text-lg block py-2 border-b border-border/50"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        About Us
-                    </Link>
-                    <Link
-                        href="#"
-                        className="hover:text-primary transition-colors font-heading text-lg block py-2 border-b border-border/50"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        Locations
-                    </Link>
-                    <Link
-                        href="#"
-                        className="hover:text-primary transition-colors font-heading text-lg block py-2"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        Contact
-                    </Link>
+                <div className="md:hidden bg-white border-b border-zinc-200 py-4 px-4 flex flex-col space-y-1">
+                    {navLinks.map((label) => (
+                        <Link
+                            key={label}
+                            href={HREF_MAP[label] ?? "#"}
+                            className="text-zinc-800 hover:text-brand-red transition-colors font-heading text-base uppercase py-3 border-b border-zinc-100 block tracking-widest"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {label}
+                        </Link>
+                    ))}
                 </div>
             )}
         </nav>

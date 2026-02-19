@@ -16,7 +16,7 @@ interface HoursTableProps {
 
 export function HoursTable({ hours, address, social }: HoursTableProps) {
     return (
-        <section id="contact" className="py-20 bg-white border-t border-zinc-100">
+        <section id="hours" className="py-20 bg-white border-t border-zinc-100">
             <div className="container mx-auto px-4">
                 <h2 className="font-heading text-zinc-900 text-2xl md:text-4xl uppercase tracking-widest text-center mb-12">
                     FIND US

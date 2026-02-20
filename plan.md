@@ -1,4 +1,4 @@
-## Plan to redesign the restaurant website
+## Plan to design the restaurant website
 
 # Things to consider
 - It is inside the Quantico military base
@@ -8,7 +8,7 @@
 
 ---
 
-# Website Redesign Plan — Sam's Inn Bar Restaurant
+# Website Design Plan — Sam's Inn Bar Restaurant
 
 ## 1. Brand Identity & Visual Direction
 
@@ -16,22 +16,19 @@
 
 **Identity split:** The site must give equal visual weight to the bar and the restaurant. The bar is not a footnote — it is half of what this place is. Navigation, hero, and sections should reflect both sides clearly.
 
-**Color Palette (anchored to sign red `#8C1F1F`):**
+**Color Palette:**
 
-Extracted from the restaurant's own painted sign — a deep, warm brick red. All other colors are derived from this.
+Two primary brand colors with a clean, easy-to-read white navbar.
 
 | Role | Hex | Usage |
 |---|---|---|
-| **Brand Red** | `#8C1F1F` | Primary accent, buttons, badges, prices |
-| **Red Dark** | `#5C1010` | Hover states, borders, active elements |
-| **Red Light** | `#B84040` | Highlights, icon fills on dark bg |
-| **Background Dark** | `#1A0C0C` | Page dark bg (warm black tinted from red) |
-| **Surface Dark** | `#2A1414` | Card backgrounds, navbar |
-| **Stone Mid** | `#7A6050` | Secondary neutral, dividers (matches stone wall) |
-| **Off-White** | `#F5EDE4` | Text on dark bg, aged paper feel |
-| **Cream** | `#E8D5C0` | Subtle section backgrounds, sign background tone |
-
-> Note: Drop the olive green — the red-anchored palette is warmer and more authentic to the actual signage. Military heritage is expressed through typography and copy, not color.
+| **Brand Red** | `#C81F30` | Primary accent, buttons, badges, prices, CTAs |
+| **Brand Green** | `#2DA46E` | Secondary accent, highlights, success states |
+| **Navbar** | `#FFFFFF` | White navbar — clean, easy to read |
+| **Navbar Text** | `#1A1A1A` | Dark text on white navbar for maximum legibility |
+| **Background Dark** | `#111111` | Page dark bg |
+| **Surface Dark** | `#1E1E1E` | Card backgrounds, dark sections |
+| **Off-White** | `#F5F5F5` | Text on dark bg |
 
 - Texture: Use the existing stone wall image (`random-rubble-stone-wall.png`) as a section background
 

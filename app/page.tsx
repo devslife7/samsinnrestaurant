@@ -6,6 +6,7 @@ import { MenuTabs } from "@/components/MenuTabs";
 import { AboutSection } from "@/components/AboutSection";
 import { HoursTable } from "@/components/HoursTable";
 import { ContactSection } from "@/components/ContactSection";
+import { SocialSection } from "@/components/SocialSection";
 import { Footer } from "@/components/Footer";
 import restaurantData from "@/data/restaurant.json";
 import menuData from "@/data/menu.json";
@@ -24,6 +25,7 @@ export default function Home() {
                 address={restaurantData.address}
                 social={restaurantData.social}
             />
+            <SocialSection />
             <ContactSection />
             <Footer />
         </main>

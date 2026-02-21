@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AboutSection() {
     return (
-        <section id="our-place" className="py-20 bg-cream">
+        <section id="our-place" className="py-20 bg-bg-dark">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
 
@@ -11,12 +11,12 @@ export function AboutSection() {
                         <p className="font-heading text-brand-red text-xs uppercase tracking-[0.3em]">
                             OUR PLACE
                         </p>
-                        <h2 className="font-heading text-bg-dark text-4xl md:text-5xl uppercase leading-tight">
+                        <h2 className="font-heading text-off-white text-4xl md:text-5xl uppercase leading-tight">
                             Hole in the Wall.
                             <br />
                             Heart of the Base.
                         </h2>
-                        <div className="space-y-4 text-stone text-base md:text-lg leading-relaxed">
+                        <div className="space-y-4 text-zinc-300 text-base md:text-lg leading-relaxed">
                             <p>
                                 Sam&apos;s Inn has been feeding and refreshing the Quantico community since 1974.
                                 Tucked inside Marine Corps Base Quantico, we&apos;ve served generations of Marines,
@@ -42,9 +42,9 @@ export function AboutSection() {
 
                     {/* Bulldog logo */}
                     <div className="flex justify-center md:justify-end">
-                        <div className="relative w-56 h-56 md:w-72 md:h-72 drop-shadow-2xl">
+                        <div className="relative w-80 h-80 md:w-[28rem] md:h-[28rem]">
                             <Image
-                                src="/bulldog-logo.png"
+                                src="/bulldog-nobackground2.png"
                                 alt="Sam's Inn Bulldog Logo"
                                 fill
                                 className="object-contain"

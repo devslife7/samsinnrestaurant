@@ -32,7 +32,7 @@ export function Footer() {
                 <div className="flex flex-col items-center space-y-3">
                     <div className="relative w-14 h-14">
                         <Image
-                            src="/bulldog-logo.png"
+                            src="/bulldog-nobackground2.png"
                             alt="Sam's Inn Bulldog"
                             fill
                             className="object-contain"

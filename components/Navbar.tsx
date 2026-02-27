@@ -50,7 +50,7 @@ export function Navbar() {
                     <Link href="#home">
                         <div className="relative w-16 h-14 md:w-24 md:h-20">
                             <Image
-                                src="/bulldog-nobackground2.png"
+                                src="/bulldog-logo-nobg.png"
                                 alt="Sam's Inn Bulldog"
                                 fill
                                 className="object-contain"

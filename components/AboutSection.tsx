@@ -44,7 +44,7 @@ export function AboutSection() {
                     <div className="flex justify-center md:justify-end">
                         <div className="relative w-80 h-80 md:w-[28rem] md:h-[28rem]">
                             <Image
-                                src="/bulldog-nobackground2.png"
+                                src="/bulldog-logo-nobg.png"
                                 alt="Sam's Inn Bulldog Logo"
                                 fill
                                 className="object-contain"
